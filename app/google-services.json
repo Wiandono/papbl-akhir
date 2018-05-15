@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "171099554092",
+    "firebase_url": "https://akhirbulanku-1521192947192.firebaseio.com",
+    "project_id": "akhirbulanku-1521192947192",
+    "storage_bucket": "akhirbulanku-1521192947192.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171099554092:android:1879267c38704a6f",
+        "android_client_info": {
+          "package_name": "onex7.akhirbulanku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171099554092-jale39jsrdgm6k9ug51cco6c1hqih0e4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "onex7.akhirbulanku",
+            "certificate_hash": "7bc96dd5ffc555adc5d415b36c063d017023bc12"
+          }
+        },
+        {
+          "client_id": "171099554092-f800kr5ngbf845ttv0dsvqavs4jdbn18.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "171099554092-s5m3c5crgr25vblr9vtu33ub51930pk5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8zhV__njNrmDjZRUmKgBGOFwbSY6cQgU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171099554092-f800kr5ngbf845ttv0dsvqavs4jdbn18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
