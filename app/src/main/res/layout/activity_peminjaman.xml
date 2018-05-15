@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="681dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Form Pengajuan Peminjaman"
+            android:textColor="@color/orange"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editTextDataDebitur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_data_debitur"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextIbu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_Ibu"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextAyah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_Ayah"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextNoHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_noHP"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_Line"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextAlamatDebitur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_Alamat"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextTujuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_Tujuan"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextNamaRekening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_NamaRekening"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paket Peminjaman"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioPaket1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/item_Paket1" />
+
+            <RadioButton
+                android:id="@+id/radioPaket2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/item_Paket2" />
+
+            <RadioButton
+                android:id="@+id/radioPaket3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/item_Paket3" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_Bank"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextNoRekening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_NoRekening"
+            android:inputType="text" />
+
+
+        <Button
+            android:id="@+id/buttonPeminjaman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/orange"
+            android:text="@string/buttonPeminjaman"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_login"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

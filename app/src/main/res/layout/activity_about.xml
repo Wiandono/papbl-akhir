@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:text="About us :
+
+Wiandono Saputra - 155150201111111
+Faishal Pradipta - 155150207111187
+Abidin Adi Prasetyo - 155150201111067
+Chrysler Imanuel - 155150200111293
+Radifan Aji Karami - 155150207111032"
+        android:textSize="20dp"/>
+
+</android.support.constraint.ConstraintLayout>
