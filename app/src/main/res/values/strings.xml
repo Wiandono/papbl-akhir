@@ -38,4 +38,21 @@
     <string name="label_total">Total</string>
     <string name="total">Rp. 209,500</string>
     <string name="button_batalkan_transaksi">Batalkan Transaksi</string>
+    <string name="buttonPeminjaman">Ajukan Peminjaman</string>
+    <string name="item_data_debitur">Nama Debitur Sesuai KTP</string>
+    <string name="item_Ibu">Nama Ibu Kandung</string>
+    <string name="item_Ayah">Nama Ayah Kandung</string>
+    <string name="item_noHP">No. HP Debitur</string>
+    <string name="item_Line">ID Line Debitur</string>
+    <string name="item_Alamat">Alamat Kos/Rumah Debitur</string>
+    <string name="item_Kerabat">Nama Kerabat</string>
+    <string name="item_NoHPKerabat">No. HP Kerabat</string>
+    <string name="item_AlamatKerabat">Alamaat Kos Kerabat</string>
+    <string name="item_Tujuan">Tujuan Peminjaman</string>
+    <string name="item_NamaRekening">Nama Pemilik Rekening</string>
+    <string name="item_Bank">Bank Tujuan</string>
+    <string name="item_NoRekening">No. Rekening</string>
+    <string name="item_Paket1">Paket 16 SKS-Rp. 150.000</string>
+    <string name="item_Paket2">Paket 20 SKS-Rp. 300.000</string>
+    <string name="item_Paket3">Paket 24 SKS-Rp. 500.000</string>
 </resources>
