@@ -19,4 +19,23 @@
     <string name="item_misc">Misc</string>
     <string name="item_home">Home</string>
     <string name="item_dashboard">Dashboard</string>
+    <string name="dashboard_transaksi">Dashboard Transaksi</string>
+    <string name="test_dashboard">Halo, Wian</string>
+    <string name="kode_transaksi">#9966F106</string>
+    <string name="nama_debitur">Wiandono Saputro</string>
+    <string name="jaminan">KTP</string>
+    <string name="label_nama_debitur">Nama Debitur</string>
+    <string name="label_jaminan">Jaminan</string>
+    <string name="tanggal_jatuh_tempo">06 May 2018</string>
+    <string name="label_tanggal_jatuh_tempo">Tanggal Jatuh Tempo</string>
+    <string name="label_besar_pinjaman">Besar Pinjaman</string>
+    <string name="besar_pinjaman">Rp. 150,000</string>
+    <string name="label_bank">Bank</string>
+    <string name="label_biaya_layanan">Biaya Layanan</string>
+    <string name="biaya_transfer">Biaya Transfer</string>
+    <string name="label_denda">Denda</string>
+    <string name="denda">Rp. 0 (0 Hari)</string>
+    <string name="label_total">Total</string>
+    <string name="total">Rp. 209,500</string>
+    <string name="button_batalkan_transaksi">Batalkan Transaksi</string>
 </resources>
