@@ -19,11 +19,22 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".PinjamActivity" />
+        <activity
+            android:name=".PeminjamanActivity"
+            android:label="@string/title_activity_peminjaman"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

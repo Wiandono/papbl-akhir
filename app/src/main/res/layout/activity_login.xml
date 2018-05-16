@@ -41,18 +41,20 @@
             android:backgroundTint="@color/colorPrimary"
             android:hint="@string/hint_password"
             android:inputType="textPassword"
-            android:textCursorDrawable="@drawable/blue_cursor" />
+            android:textCursorDrawable="@drawable/blue_cursor"
+            tools:targetApi="lollipop" />
 
         <Button
             android:id="@+id/buttonSignin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:background="@color/orange"
+            android:backgroundTint="@color/orange"
             android:text="@string/button_login"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textStyle="normal" />
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            tools:targetApi="lollipop" />
 
         <TextView
             android:id="@+id/textViewSignUp"

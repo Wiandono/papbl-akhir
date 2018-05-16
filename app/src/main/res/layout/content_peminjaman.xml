@@ -1,6 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PeminjamanActivity"
+    tools:showIn="@layout/app_bar_peminjaman">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="@string/title_pengajuan"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_data_debitur"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/label_paket"
+            android:textColor="@color/black"
+            android:textSize="17.5dp" />
+
+        <RadioGroup
+            android:id="@+id/radioPaket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioPaket1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:checked="true"
+                android:text="@string/item_Paket1"
+                tools:targetApi="lollipop" />
+
+            <RadioButton
+                android:id="@+id/radioPaket2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/item_Paket2" />
+
+            <RadioButton
+                android:id="@+id/radioPaket3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/item_Paket3" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:hint="@string/item_Bank"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextNoRekening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/item_NoRekening"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/buttonPeminjaman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/buttonPeminjaman"
+            android:textColor="@color/white"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+
+</ScrollView>

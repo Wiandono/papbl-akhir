@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-    <TextView
+    <include
+        layout="@layout/app_bar_about"
         android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:textColor="#000000"
-        android:text="About us :
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_home"
+        app:menu="@menu/activity_home_drawer" />
 
-Wiandono Saputra - 155150201111111
-Faishal Pradipta - 155150207111187
-Abidin Adi Prasetyo - 155150201111067
-Chrysler Imanuel - 155150200111293
-Radifan Aji Karami - 155150207111032"
-        android:textSize="20dp"/>
-
-</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.DrawerLayout>

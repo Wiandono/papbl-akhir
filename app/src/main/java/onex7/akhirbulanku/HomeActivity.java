@@ -40,15 +40,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -103,12 +94,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            finish();
-            startActivity(new Intent(HomeActivity.this, HomeActivity.class));
+
         } else if (id == R.id.nav_dashboard) {
-
+            startActivity(new Intent(HomeActivity.this, DashboardActivity.class));
         } else if (id == R.id.nav_about) {
-
+            startActivity(new Intent(HomeActivity.this, AboutActivity.class));
         } else if (id == R.id.nav_logout) {
             firebaseAuth.signOut();
             finish();

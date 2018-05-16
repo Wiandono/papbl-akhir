@@ -1,74 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".HomeActivity"
-    tools:showIn="@layout/app_bar_home"
-    android:orientation="vertical">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Akhir Bulanku"
-    android:textAlignment="center"/>
+    tools:showIn="@layout/app_bar_home">
 
-
-    <ImageView
-        android:id="@+id/gambar1"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/home" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Akhirbulanku.com adalah bisnis financial technology yang bergerak dalam bidang pinjam dan meminjam dana jangka pendek khusus untuk mahasiswa berstatus aktif pada strata pendidikan Sarjana 1 Universitas Brawijaya"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="128dp" />
+        <ImageView
+            android:id="@+id/home_header"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:contentDescription="@string/cd_home_header"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/Steps"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="205dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/overlay"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/PaketPinjaman"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="205dp" />
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cd_home_logo"
+                android:src="@drawable/logo" />
 
+        </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="\n                                               Hello? \nPengen nanya-nanya lebih detail?Yuk, kamu bisa langsung menghubungi Akhirbulanku melalui contact dibawah ini
-           \n                                          Akhirbulanku
+        <TextView
+            android:id="@+id/section_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/home_section_1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-Jl. Ikan Teri No.1 Kelurahan Tunjungsekar, Malang, Jawa Timur
+        <TextView
+            android:id="@+id/section_1_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/section_1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/home_section_1_desc"
+            android:textAlignment="center" />
 
-                                      (0813) 1344-1517
-                                  info@akhirbulanku.com
+        <ImageView
+            android:id="@+id/steps"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:layout_below="@+id/section_1_desc"
+            android:contentDescription="@string/cd_home_steps"
+            android:src="@drawable/step" />
 
-    Jam Operasional :
-    Senin - Jumat
-    08:00 - 19:00
-"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="128dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:layout_below="@+id/steps"
+            android:contentDescription="@string/cd_home_paket"
+            android:src="@drawable/paket" />
 
+    </RelativeLayout>
 
-
-
-
-
-
-
-</LinearLayout>
+</ScrollView>

@@ -9,39 +9,21 @@
     tools:showIn="@layout/app_bar_dashboard">
 
     <TextView
-        android:id="@+id/title_dashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:text="@string/test_dashboard"
-        android:textColor="@color/black" />
-
-    <!--suppress CheckTagEmptyBody -->
-    <LinearLayout
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_below="@+id/title_dashboard"
-        android:layout_marginTop="10dp"
-        android:background="@color/grey"
-        android:orientation="horizontal"></LinearLayout>
-
-    <TextView
         android:id="@+id/kode_transaksi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/divider"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/kode_transaksi"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <LinearLayout
         android:id="@+id/detail_transaksi_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/kode_transaksi"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         android:weightSum="2">
 
@@ -52,12 +34,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/label_nama_debitur"
+                android:id="@+id/label_nama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/label_nama_debitur" />
+                android:text="@string/label_nama" />
 
             <TextView
                 android:id="@+id/nama_debitur"
@@ -65,7 +47,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="2.5dp"
-                android:text="@string/nama_debitur"
                 android:textColor="@color/black" />
 
         </LinearLayout>
@@ -90,7 +71,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="2.5dp"
-                android:text="0061234567890 (Mandiri)"
                 android:textColor="@color/black" />
 
         </LinearLayout>
@@ -102,6 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/detail_transaksi_1"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         android:weightSum="2">
 
@@ -112,20 +93,19 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/label_tanggal_jatuh_tempo"
+                android:id="@+id/label_jatuh_tempo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/label_tanggal_jatuh_tempo" />
+                android:text="@string/label_jatuh_tempo" />
 
             <TextView
-                android:id="@+id/tanggal_jaminan"
+                android:id="@+id/tanggal_jatuh_tempo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="2.5dp"
-                android:text="@string/tanggal_jatuh_tempo"
                 android:textColor="@color/black" />
 
         </LinearLayout>
@@ -150,7 +130,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="2.5dp"
-                android:text="@string/besar_pinjaman"
                 android:textColor="@color/black" />
 
         </LinearLayout>
@@ -162,6 +141,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/detail_transaksi_2"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         android:weightSum="2">
 
@@ -185,7 +165,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="2.5dp"
-                android:text="Rp. 25,000"
                 android:textColor="@color/black" />
 
         </LinearLayout>
@@ -202,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/biaya_transfer" />
+                android:text="@string/label_biaya_transfer" />
 
             <TextView
                 android:id="@+id/biaya_transfer"
@@ -210,7 +189,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="2.5dp"
-                android:text="Rp. 7,500"
                 android:textColor="@color/black" />
 
         </LinearLayout>
@@ -222,6 +200,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/detail_transaksi_3"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         android:weightSum="2">
 
@@ -245,7 +224,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="2.5dp"
-                android:text="@string/denda"
                 android:textColor="@color/black" />
 
         </LinearLayout>
@@ -270,7 +248,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="2.5dp"
-                android:text="@string/total"
                 android:textColor="@color/black" />
 
         </LinearLayout>
@@ -278,11 +255,15 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/buttonBatal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="@string/button_batalkan_transaksi"
+        android:layout_below="@+id/detail_transaksi_4"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/detail_transaksi_4"/>
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/button_batalkan_peminjaman"
+        android:textColor="@color/white"
+        tools:targetApi="lollipop" />
 
 </RelativeLayout>
