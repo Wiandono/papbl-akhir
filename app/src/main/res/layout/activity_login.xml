@@ -13,10 +13,10 @@
         android:orientation="vertical">
 
         <ImageView
-            android:contentDescription="@string/contentDescriptionLogo"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:layout_margin="15dp"
+            android:contentDescription="@string/contentDescriptionLogo"
             android:src="@drawable/logo" />
 
         <EditText
@@ -26,8 +26,11 @@
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:backgroundTint="@color/colorPrimary"
             android:hint="@string/hint_email_address"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/blue_cursor"
+            tools:targetApi="lollipop" />
 
         <EditText
             android:id="@+id/editTextPassword_login"
@@ -35,8 +38,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:backgroundTint="@color/colorPrimary"
             android:hint="@string/hint_password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textCursorDrawable="@drawable/blue_cursor" />
 
         <Button
             android:id="@+id/buttonSignin"

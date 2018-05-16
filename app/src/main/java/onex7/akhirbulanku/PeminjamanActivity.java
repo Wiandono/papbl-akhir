@@ -29,7 +29,7 @@ public class PinjamActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pinjam);
+        setContentView(R.layout.activity_peminjaman);
 
         editTextnamaDebitur = findViewById(R.id.editTextDataDebitur);
         editTextNamaIbu = findViewById(R.id.editTextIbu);
